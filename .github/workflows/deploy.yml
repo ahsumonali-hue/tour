@@ -27,11 +27,8 @@ jobs:
           node-version: "20"
           cache: "npm"
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-
       - name: Install dependencies
-        run: npm ci || npm install
+        run: npm install
 
       - name: Build with Next.js
         run: npm run build
